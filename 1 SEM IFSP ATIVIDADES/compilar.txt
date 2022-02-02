@@ -1,2 +1,6 @@
 gcc oimundo.c -o oimundo.exe
 .\oimundo
+
+gcc -Wall -Werror programa.c -o programa.exe
+
+ex 11 - colocar cadeia de caracteres
