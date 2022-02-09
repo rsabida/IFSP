@@ -16,14 +16,38 @@
 
 int main(void){
 
-    int vet[10];
+  int vet[100];
+  int a1=0, n=0, r=0, ai=0;
+    
+  for(int cont =0; cont<100; cont++){
 
-    for(int cont =0; cont<10; cont++){
+    vet[cont] = 0;
 
-        vet[cont] = 0;
+  }
 
-    }
+  printf("Valor elemento inicial: ");
+  scanf("%d", &a1);
+  printf("Numero de elementos: ");
+  scanf("%d", &n);
+  printf("Razao: ");
+  scanf("%d", &r);
 
-    return 0;
+
+  for(int cont =1; cont <=n;cont++){
+
+    ai = a1 + (cont - 1)*r;
+    vet[cont-1] = ai;
+  }
+
+  printf("(");
+  for(int cont = 0; cont <n; cont++){
+
+    printf(" %d ", vet[cont]);
+
+  }
+  printf(")");
+
+
+  return 0;
 
 }
